@@ -64,7 +64,7 @@ const EnrollComponent = (props) => {
       )}
       {currentUser && searchResult && searchResult.length != 0 && (
         <div>
-          <p>以下是目前有的課程</p>
+          <p>以下是目前的搜尋結果</p>
           {searchResult.map((course) => (
             <div key={course._id} className="card" style={{ width: "18rem" }}>
               <div className="card-body">
