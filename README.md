@@ -16,3 +16,7 @@
 - 使用 axios 模組進行串接
 - 資料庫：MongoDB，
 - 使用 Bootstrap 建立網頁樣式。
+
+## 網頁畫面
+
+![alt text](image.png)
