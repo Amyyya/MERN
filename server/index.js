@@ -6,13 +6,13 @@ const app = express();
 const mongoose = require("mongoose");
 const authRoute = require("./routes").auth;
 const courseRoute = require("./routes").course;
-const passport = require("passport"); 
-require("./config/passport")(passport); 
+const passport = require("passport");
+require("./config/passport")(passport);
 const cors = require("cors");
 
 // connect to DB
 mongoose
-  .connect("mongodb+srv://Amy:fHrzOmyywUPcWHdm@cluster0.ir70zjf.mongodb.net/?retryWrites=true&w=majority", {
+  .connect(process.env.DB_CONNECT, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
