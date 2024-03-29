@@ -10,7 +10,7 @@ const passport = require("passport");
 require("./config/passport")(passport);
 const cors = require("cors");
 
-// connect to DB
+// connect to MongoDB
 mongoose
   .connect(process.env.DB_CONNECT, {
     useNewUrlParser: true,
